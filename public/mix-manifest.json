@@ -1,6 +1,8 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
+    "/css/template.css": "/css/template.css",
+    "/js/globalController.js": "/js/globalController.js",
     "/vendor/fontawesome-free/js/all.min.js": "/vendor/fontawesome-free/js/all.min.js",
     "/vendor/jquery-mask-plugin/jquery.mask.min.js": "/vendor/jquery-mask-plugin/jquery.mask.min.js",
     "/vendor/jquery/jquery.min.js": "/vendor/jquery/jquery.min.js"

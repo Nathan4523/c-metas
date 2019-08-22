@@ -1,7 +1,49 @@
-@extends('layouts.app')
+@extends('layouts.appAuth')
 
-@section('content')
-<div class="container">
+@section('content-auth')
+<div class="login-area">
+        <div class="container">
+            <div class="login-box ptb--100">
+                    <form method="POST" action="{{ route('register') }}">
+                            @csrf
+                    <div class="login-form-head">
+                        <h4>Cadastre-se</h4>
+                        <p>Olá, Inscreva-se e junte-se a nós</p>
+                    </div>
+                    <div class="login-form-body">
+                        <div class="form-gp">
+                            <label for="exampleInputName1">Nome completo</label>
+                            <input type="text" id="exampleInputName1" name="name" required>
+                            <i class="ti-user"></i>
+                        </div>
+                        <div class="form-gp">
+                            <label for="exampleInputEmail1">E-mail</label>
+                            <input type="email" id="exampleInputEmail1" name="email" required>
+                            <i class="ti-email"></i>
+                        </div>
+                        <div class="form-gp">
+                            <label for="exampleInputPassword1">Senha</label>
+                            <input type="password" id="exampleInputPassword1" name="password" required>
+                            <i class="ti-lock"></i>
+                        </div>
+                        <div class="form-gp">
+                            <label for="exampleInputPassword2">Confirmar senha</label>
+                            <input type="password" id="exampleInputPassword2" name="password_confirmation" required>
+                            <i class="ti-lock"></i>
+                        </div>
+                        <div class="submit-btn-area">
+                            <button id="form_submit" type="submit">Criar conta <i class="ti-arrow-right"></i></button>
+                        </div>
+                        <div class="form-footer text-center mt-5">
+                        <p class="text-muted">Já tenho um login <a href="{{route('login')}}">Fazer login</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -73,5 +115,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 @endsection

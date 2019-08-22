@@ -1,7 +1,7 @@
 <div class="sidebar-menu">
     <div class="sidebar-header">
         <div class="logo">
-            <a href="#"><img src="{{asset('images/icon/logo.png') }}" alt="logo"></a>
+            <a href="#"><img src="{{asset('images/logo/logo-transparente.png') }}" alt="logo" class="logo-menu"></a>
         </div>
     </div>
     <div class="main-menu">
@@ -15,17 +15,17 @@
                     </li>
                     <li>
                         <a href="#">
-                            <i class="ti-dashboard"></i><span>Minha carteira</span>
+                            <i class="fas fa-wallet"></i><span>Minha carteira</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="ti-dashboard"></i><span>Metas</span>
+                            <i class="fas fa-tasks"></i><span>Metas</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="ti-dashboard"></i><span>Novas metas</span>
+                            <i class="fas fa-plus"></i><span>Novas metas</span>
                         </a>
                     </li>
                 </ul>

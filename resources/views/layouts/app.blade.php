@@ -18,15 +18,10 @@
     <link rel="stylesheet" href="{{ asset('css/slicknav.min.css') }}">
 
     <!-- others css -->
-    <link rel="stylesheet" href="{{ asset('css/typography.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/default-css.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/template.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
-
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('styles')
-
-    <script src="{{asset('js/vendor/modernizr-2.8.3.min.js')}}"></script>
 </head>
 
 <body>
@@ -39,22 +34,35 @@
                 <div class="row align-items-center">
                     <div class="col-sm-6">
                         <div class="breadcrumbs-area clearfix">
-                            <h4 class="page-title pull-left">Dashboard</h4>
+                            <h4 class="page-title pull-left">{{Request::segment(1)}}</h4>
                             <ul class="breadcrumbs pull-left">
-                                <li><a href="index.html">Home</a></li>
-                                <li><span>Dashboard</span></li>
+                                <li>
+                                    <a href="index.html">{{Request::segment(1)}}</a>
+                                </li>
+                                @if( Request::segment(2) != null)
+                                <li>
+                                    <span>{{Request::segment(2)}}</span>
+                                </li>
+                                @endif
                             </ul>
                         </div>
                     </div>
                     <div class="col-sm-6 clearfix">
                         <div class="user-profile pull-right">
                             <img class="avatar user-thumb" src="{{ asset('images/author/avatar.png') }}" alt="avatar">
-                            <h4 class="user-name dropdown-toggle" data-toggle="dropdown">Kumkum Rai <i
+                            <h4 class="user-name dropdown-toggle" data-toggle="dropdown">{{Auth::user()->name}} <i
                                     class="fa fa-angle-down"></i></h4>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Message</a>
-                                <a class="dropdown-item" href="#">Settings</a>
-                                <a class="dropdown-item" href="#">Log Out</a>
+                                <a class="dropdown-item" href="#">Mensagens</a>
+                                <a class="dropdown-item" href="#">Configurações</a>
+                                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    Sair da conta
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                    style="display: none;">
+                                    @csrf
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -80,12 +88,15 @@
     <script src="{{ asset('js/metisMenu.min.js') }}"></script>
     <script src="{{ asset('js/jquery.slimscroll.min.js') }}"></script>
     <script src="{{ asset('js/jquery.slicknav.min.js') }}"></script>
+    <script src="{{asset('js/vendor/modernizr-2.8.3.min.js')}}"></script>
 
     <!-- others plugins -->
+    <script src="{{ asset('vendor/fontawesome-free/js/all.min.js') }}"></script>
     <script src="{{ asset('js/plugins.js') }}"></script>
     <script src="{{ asset('js/scripts.js') }}"></script>
 
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/globalController.js') }}"></script>
     @yield('scripts')
 </body>
 

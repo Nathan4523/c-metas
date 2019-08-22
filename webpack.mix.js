@@ -12,7 +12,9 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+    .js('resources/js/globalController.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
+    .sass('resources/sass/template.scss', 'public/css')
     .copyDirectory('resources/images', 'public/images')
     .copyDirectory('node_modules/@fortawesome/fontawesome-free/js/all.min.js', 'public/vendor/fontawesome-free/js')
     .copyDirectory('node_modules/jquery-mask-plugin/dist/jquery.mask.min.js', 'public/vendor/jquery-mask-plugin')

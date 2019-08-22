@@ -1,0 +1,33 @@
+.login-area {
+    .login-form-head {
+        background-color: $default;
+    }
+
+    .form-gp {
+        .ti-email,
+        .ti-lock {
+            color: $preto;
+        }
+
+        .focused {
+            label {
+                top: -20px;
+            }
+        }
+
+        input {
+            height: 43px;
+        }
+    }
+
+    .submit-btn-area {
+        button {
+            background-color: $default;
+            color: $branco;
+
+            &:hover {
+                background-color: $default_escuro;
+            }
+        }
+    }
+}
