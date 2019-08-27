@@ -8,6 +8,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <link rel="shortcut icon" href="{{asset('images/logo/logo-transparente.png') }}" />
+
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
@@ -34,8 +36,8 @@
                 <div class="row align-items-center">
                     <div class="col-sm-6">
                         <div class="breadcrumbs-area clearfix">
-                            <h4 class="page-title pull-left">{{Request::segment(1)}}</h4>
-                            <ul class="breadcrumbs pull-left">
+                            <h4 class="page-title pull-left mb-0">{{Request::segment(1)}}</h4>
+                            <ul class="breadcrumbs pull-left mb-0">
                                 <li>
                                     <a href="index.html">{{Request::segment(1)}}</a>
                                 </li>
@@ -53,9 +55,10 @@
                             <h4 class="user-name dropdown-toggle" data-toggle="dropdown">{{Auth::user()->name}} <i
                                     class="fa fa-angle-down"></i></h4>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Mensagens</a>
-                                <a class="dropdown-item" href="#">Configurações</a>
-                                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            <a class="dropdown-item" href="{{route('chamados.index')}}">Mensagens</a>
+                                <a class="dropdown-item" href="{{route('setting.index')}}">Configurações</a>
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                     Sair da conta
                                 </a>
 
@@ -74,7 +77,6 @@
         </div>
         @include('includes.footer')
     </div>
-    @include('includes.menu-right')
 
 
     <!-- Scripts -->

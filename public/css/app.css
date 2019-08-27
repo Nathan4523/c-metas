@@ -665,6 +665,24 @@ img {
   max-width: 60%;
 }
 
+.btn_default {
+  color: #4e0d0f !important;
+}
+
+.btn_default:focus {
+  outline: none;
+}
+
+.btn_salvar {
+  background-color: #4e0d0f !important;
+  color: #ffffff !important;
+}
+
+.btn_salvar:hover {
+  background-color: #2d0304 !important;
+  transition: 0.3s !important;
+}
+
 .login-area .login-form-head {
   background-color: #4e0d0f;
 }
@@ -689,6 +707,94 @@ img {
 
 .login-area .submit-btn-area button:hover {
   background-color: #2d0304;
+}
+
+.btn_cicle_create {
+  display: table;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  background-color: #4e0d0f;
+  text-align: center;
+  font-size: 32px;
+}
+
+.btn_cicle_create svg {
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .btn_cicle_create {
+    display: table;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    font-size: 45px;
+    width: auto;
+    left: inherit;
+    background-color: transparent;
+  }
+
+  .btn_cicle_create svg {
+    color: #4e0d0f;
+  }
+
+  .btn_cicle_create svg:hover {
+    color: #2d0304;
+    transition: 0.3s;
+  }
+}
+
+.setting_account #controles a {
+  background-color: #231F20;
+  color: #ffffff;
+}
+
+.setting_account #tab-dados .btn_salvar {
+  background-color: #4e0d0f;
+  color: #ffffff;
+}
+
+.setting_account #tab-dados .btn_salvar:hover {
+  background-color: #2d0304;
+  transition: 0.3s;
+}
+
+.setting_account #tab-foto .bloco_perfil .avatar img {
+  border-radius: 233px;
+  max-width: 50%;
+  margin-bottom: 2rem;
+}
+
+.setting_account #tab-foto .bloco_perfil span {
+  display: table;
+  margin: auto auto 2rem;
+}
+
+.setting_account #tab-foto #uploadImagem-form .upload_foto {
+  display: block;
+  background-color: #231F20;
+  border: 1px solid #231F20;
+  border-radius: 5px;
+  color: #ffffff;
+  width: 200px;
+  height: calc(2.25rem + 2px);
+  margin-top: 1rem;
+  margin: auto auto 2rem;
+}
+
+.setting_account #tab-foto #uploadImagem-form .upload_foto:hover {
+  cursor: pointer;
+}
+
+.setting_account #tab-foto #uploadImagem-form #upload_foto {
+  display: none;
+}
+
+.setting_account #tab-foto #uploadImagem-form .uploadOk {
+  background-color: #4e0d0f !important;
+  border: 1px solid #2d0304 !important;
 }
 
 /*!

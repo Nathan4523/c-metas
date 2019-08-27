@@ -17,4 +17,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['middleware' => 'auth' ], function(){
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::resource('metas', 'MetasController');
+    Route::resource('carteira', 'CarteiraController');
+    Route::resource('chamados', 'ChamadosController');
+    Route::get('configuracao', 'SettingController@index')->name('setting.index');
+});

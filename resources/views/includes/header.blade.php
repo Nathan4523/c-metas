@@ -17,8 +17,6 @@
         <!-- profile info & task notification -->
         <div class="col-md-6 col-sm-4 clearfix">
             <ul class="notification-area pull-right">
-                <li id="full-view"><i class="ti-fullscreen"></i></li>
-                <li id="full-view-exit"><i class="ti-zoom-out"></i></li>
                 <li class="dropdown">
                     <i class="ti-bell dropdown-toggle" data-toggle="dropdown">
                         <span>2</span>
@@ -49,9 +47,6 @@
                             </a>
                         </div>
                     </div>
-                </li>
-                <li class="settings-btn">
-                    <i class="ti-settings"></i>
                 </li>
             </ul>
         </div>

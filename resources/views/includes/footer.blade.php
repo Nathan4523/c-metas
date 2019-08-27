@@ -1,5 +1,5 @@
 <footer>
     <div class="footer-area">
-        <p>© Copyright 2018. All right reserved. Template by <a href="https://colorlib.com/wp/">Colorlib</a>.</p>
+        <p>©2019. Todos os direitos reservados. <a href="https://camposwebsolutions.com.br" class="text-danger" target="_blank">Campos Web Solutions</a>.</p>
     </div>
 </footer>

@@ -1,3 +1,20 @@
 .logo-menu{
     max-width: 60%;
 }
+
+.btn_default{
+    color: $default !important;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.btn_salvar{
+    background-color: $default !important;
+    color: $branco !important;
+    &:hover{
+        background-color: $default_escuro !important;
+        transition: 0.3s !important;
+    }
+}

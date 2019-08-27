@@ -6,7 +6,7 @@
         <div class="col-md-4">
             <div class="single-report mb-xs-30">
                 <div class="s-report-inner pr--20 pt--30 mb-3">
-                    <div class="icon"><i class="fa fa-btc"></i></div>
+                        <div class="icon"><i class="fas fa-coins"></i></div>
                     <div class="s-report-title d-flex justify-content-between">
                         <h4 class="header-title mb-0">Bitcoin</h4>
                         <p>24 H</p>
@@ -22,7 +22,7 @@
         <div class="col-md-4">
             <div class="single-report mb-xs-30">
                 <div class="s-report-inner pr--20 pt--30 mb-3">
-                    <div class="icon"><i class="fa fa-btc"></i></div>
+                        <div class="icon"><i class="fas fa-city"></i></div>
                     <div class="s-report-title d-flex justify-content-between">
                         <h4 class="header-title mb-0">Bitcoin Dash</h4>
                         <p>24 H</p>
@@ -38,7 +38,7 @@
         <div class="col-md-4">
             <div class="single-report">
                 <div class="s-report-inner pr--20 pt--30 mb-3">
-                    <div class="icon"><i class="fa fa-eur"></i></div>
+                        <div class="icon"><i class="far fa-chart-bar"></i></div>
                     <div class="s-report-title d-flex justify-content-between">
                         <h4 class="header-title mb-0">Euthorium</h4>
                         <p>24 H</p>

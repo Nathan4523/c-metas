@@ -1,0 +1,36 @@
+.btn_cicle_create {
+    display: table;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    background-color: $default;
+    text-align: center;
+    font-size: 32px;
+    
+    svg {
+        color: $branco;
+    }
+}
+
+@media (min-width: 768px) {
+    .btn_cicle_create {
+        display: table;
+        position: absolute;
+        right: 25px;
+        bottom: 25px;
+        font-size: 45px;
+        width: auto;
+        left: inherit;
+        background-color: transparent;
+
+        svg {
+            color: $default;
+
+            &:hover {
+                color: $default_escuro;
+                transition: 0.3s;
+            }
+        }
+    }
+}
